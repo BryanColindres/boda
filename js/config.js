@@ -88,7 +88,7 @@ window.BODA_CONFIG = {
   // Cambia los nombres de los archivos según tus fotos
   fotos: {
     hero:      "img/hero.jpg",
-    verso:     "img/preboda1.jpg",
+    verso:     "img/preboda1.png",
     evento:    "img/preboda2.jpg",
     historia1: "img/preboda3.jpg",
     historia2: "img/preboda4.jpg",
