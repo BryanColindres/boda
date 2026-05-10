@@ -92,17 +92,17 @@ window.BODA_CONFIG = {
     evento:    "img/preboda2.jpg",
     historia1: "img/preboda3.jpg",
     historia2: "img/preboda4.jpg",
-    historia3: "img/preboda5.jpg",
+    historia3: "img/preboda5.JPG",
     galeria: [
-      "img/preboda6.jpg",
-      "img/preboda7.jpg",
+      "img/preboda6.JPG",
+      "img/preboda7.JPG",
       "img/preboda8.jpg",
       "img/preboda9.jpg",
       "img/preboda10.jpg",
       "img/preboda11.jpg"
     ],
-    rsvp:   "img/preboda12.jpg",
-    footer: "img/footer.jpg"
+    rsvp:   "img/preboda12.JPG",
+    footer: "img/footer.JPG"
   },
 
   // ── COLORES (paleta de la imagen enviada) ───────────
