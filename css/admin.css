@@ -1,0 +1,13 @@
+/* ── Estilos adicionales para el panel admin ── */
+.adm-modal input[type="text"]:focus,
+.adm-modal input[type="password"]:focus {
+  border-color: var(--rose-mid) !important;
+  outline: none;
+}
+.adm-modal button:hover {
+  opacity: .88;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}

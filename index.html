@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bryan & Stefany · 03.10.2026</title>
+  <meta name="description" content="Estamos felices de invitarte a celebrar nuestra boda." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__overlay"></div>
+      <img class="hero__photo" id="heroPhoto" src="img/hero.jpg" alt="Bryan y Stefany" onerror="this.style.display='none'" />
+    </div>
+    <div class="hero__content reveal">
+      <p class="hero__pre" id="heroPre">Nos casamos</p>
+      <h1 class="hero__names">
+        <span id="novioNombre">Bryan Daniel</span>
+        <span class="hero__amp">&</span>
+        <span id="noviaNombre">Stefany Jissel</span>
+      </h1>
+      <p class="hero__apellidos" id="heroApellidos">Colindres Mejia · Herrera Flores</p>
+      <div class="hero__divider"><span></span><svg viewBox="0 0 40 20" fill="none"><path d="M20 2C20 2 14 10 8 10C14 10 20 18 20 18C20 18 26 10 32 10C26 10 20 2 20 2Z" fill="currentColor"/></svg><span></span></div>
+      <p class="hero__date" id="heroDate">03 · 10 · 2026</p>
+    </div>
+    <div class="hero__scroll">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       COUNTDOWN
+  ══════════════════════════════════════ -->
+  <section class="countdown-section" id="countdown-section">
+    <div class="container">
+      <p class="section-label reveal" id="countdownLabel">Faltan</p>
+      <div class="countdown reveal" id="countdown">
+        <div class="countdown__item"><span id="cd-days">00</span><p>días</p></div>
+        <div class="countdown__dot">·</div>
+        <div class="countdown__item"><span id="cd-hours">00</span><p>horas</p></div>
+        <div class="countdown__dot">·</div>
+        <div class="countdown__item"><span id="cd-mins">00</span><p>minutos</p></div>
+        <div class="countdown__dot">·</div>
+        <div class="countdown__item"><span id="cd-secs">00</span><p>segundos</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       VERSE / QUOTE — con foto intercalada
+  ══════════════════════════════════════ -->
+  <section class="verse-section" id="verse-section">
+    <div class="verse-inner">
+      <div class="verse-photo reveal-left">
+        <img id="versePhoto" src="img/preboda1.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" />
+      </div>
+      <div class="verse-text reveal-right">
+        <svg class="verse-icon" viewBox="0 0 60 45" fill="none"><path d="M0 45V27C0 18 6 9.3 18 1.5L22.5 7.5C16.5 11.5 13 16.5 12 22.5H24V45H0ZM36 45V27C36 18 42 9.3 54 1.5L58.5 7.5C52.5 11.5 49 16.5 48 22.5H60V45H36Z" fill="currentColor" opacity="0.25"/></svg>
+        <blockquote id="verseText">
+          "El amor es paciente, es bondadoso. El amor no es envidioso ni jactancioso ni orgulloso."
+        </blockquote>
+        <cite id="verseCite">— 1 Corintios 13:4</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       EVENTO — con foto intercalada
+  ══════════════════════════════════════ -->
+  <section class="event-section" id="event-section">
+    <div class="event-inner">
+      <div class="event-text reveal-left">
+        <p class="section-label" id="eventLabel">La celebración</p>
+        <h2 class="section-title" id="venueName">Valletal Eventos</h2>
+
+        <div class="event-detail">
+          <div class="event-detail__icon">📅</div>
+          <div>
+            <p class="event-detail__label">Fecha</p>
+            <p class="event-detail__value" id="eventDate">Sábado, 03 de octubre de 2026</p>
+          </div>
+        </div>
+
+        <div class="event-detail">
+          <div class="event-detail__icon">🕐</div>
+          <div>
+            <p class="event-detail__label">Hora</p>
+            <p class="event-detail__value" id="eventTime">11:00 AM</p>
+          </div>
+        </div>
+
+        <div class="event-detail">
+          <div class="event-detail__icon">📍</div>
+          <div>
+            <p class="event-detail__label">Lugar</p>
+            <p class="event-detail__value" id="eventVenue">Valletal Eventos</p>
+          </div>
+        </div>
+
+        <div class="event-buttons">
+          <a class="btn btn--primary" id="mapsBtn" href="https://maps.app.goo.gl/5VHu6E56MUNGPrey8?g_st=ac" target="_blank">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Google Maps
+          </a>
+          <a class="btn btn--outline" id="wazeBtn" href="https://www.waze.com/ul?ll=0,0&navigate=yes" target="_blank">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.54 6.63C19.08 4.45 16.83 3 14.27 3c-1.95 0-3.72.7-5.08 1.85C7.85 3.69 6.26 3 4.5 3 1.46 3 0 5.24 0 7.5c0 1.5.54 2.88 1.43 3.94L6 20.5l.5 1H8l4-8 4 8h1.5l.5-1 4.5-9.06C23.46 10.38 24 9 24 7.5c0-.33-.16-1.87-.15-1.87h-3.31z"/></svg>
+            Waze
+          </a>
+        </div>
+      </div>
+      <div class="event-photo reveal-right">
+        <img id="eventPhoto" src="img/preboda2.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       INSTRUCCIONES
+  ══════════════════════════════════════ -->
+  <section class="instructions-section" id="instructions-section">
+    <div class="container">
+      <p class="section-label reveal" id="instrLabel">Detalles importantes</p>
+      <div class="instructions-grid" id="instructionsGrid">
+
+        <div class="instr-card reveal">
+          <div class="instr-card__icon">⏰</div>
+          <h3 id="instr1Title">Hora de llegada</h3>
+          <p id="instr1Text">Te pedimos llegar 30 minutos antes de la ceremonia para que puedas ubicarte con comodidad.</p>
+        </div>
+
+        <div class="instr-card reveal">
+          <div class="instr-card__icon">👗</div>
+          <h3 id="instr2Title">Código de vestimenta</h3>
+          <p id="instr2Text">Etiqueta formal. Evita el blanco y el negro puro. Preferimos tonos cálidos y elegantes.</p>
+        </div>
+
+        <div class="instr-card reveal">
+          <div class="instr-card__icon">🚫</div>
+          <h3 id="instr3Title">Niños</h3>
+          <p id="instr3Text">Este es un evento solo para adultos. Agradecemos tu comprensión.</p>
+        </div>
+
+        <div class="instr-card reveal">
+          <div class="instr-card__icon">📱</div>
+          <h3 id="instr4Title">Confirmación</h3>
+          <p id="instr4Text">Confírmanos tu asistencia antes del 01 de septiembre de 2026.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       GALERÍA — fotos intercaladas con texto
+  ══════════════════════════════════════ -->
+  <section class="gallery-section" id="gallery-section">
+    <div class="container">
+      <p class="section-label reveal" id="galleryLabel">Nuestra historia</p>
+      <p class="section-subtitle reveal" id="gallerySubtitle">Momentos que nos trajeron hasta aquí</p>
+    </div>
+
+    <!-- Story block 1 -->
+    <div class="story-block story-block--left reveal-left" id="story1">
+      <div class="story-block__image">
+        <img src="img/preboda3.jpg" alt="Preboda" onerror="this.parentElement.parentElement.style.display='none'" />
+      </div>
+      <div class="story-block__text">
+        <p id="story1Text">Desde el primer momento supimos que algo especial comenzaba. Cada día juntos ha sido un regalo que atesoramos profundamente.</p>
+      </div>
+    </div>
+
+    <!-- Story block 2 -->
+    <div class="story-block story-block--right reveal-right" id="story2">
+      <div class="story-block__text">
+        <p id="story2Text">Compartimos sueños, risas y caminos. Hoy queremos que seas parte del día más importante de nuestras vidas.</p>
+      </div>
+      <div class="story-block__image">
+        <img src="img/preboda4.jpg" alt="Preboda" onerror="this.parentElement.parentElement.style.display='none'" />
+      </div>
+    </div>
+
+    <!-- Story block 3 -->
+    <div class="story-block story-block--left reveal-left" id="story3">
+      <div class="story-block__image">
+        <img src="img/preboda5.jpg" alt="Preboda" onerror="this.parentElement.parentElement.style.display='none'" />
+      </div>
+      <div class="story-block__text">
+        <p id="story3Text">Porque el amor verdadero no es perfecto, es real. Y el nuestro ha crecido día a día, paso a paso, juntos.</p>
+      </div>
+    </div>
+
+    <!-- Main gallery grid -->
+    <div class="container">
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-index="0"><img src="img/preboda6.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item reveal" data-index="1"><img src="img/preboda7.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item reveal" data-index="2"><img src="img/preboda8.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item reveal" data-index="3"><img src="img/preboda9.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item reveal" data-index="4"><img src="img/preboda10.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" /></div>
+        <div class="gallery-item reveal" data-index="5"><img src="img/preboda11.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CONFIRMACIÓN ASISTENCIA
+  ══════════════════════════════════════ -->
+  <section class="rsvp-section" id="rsvp-section">
+    <div class="rsvp-inner">
+      <div class="rsvp-photo reveal-left">
+        <img id="rsvpPhoto" src="img/preboda12.jpg" alt="Preboda" onerror="this.parentElement.style.display='none'" />
+      </div>
+      <div class="rsvp-text reveal-right">
+        <p class="section-label" id="rsvpLabel">¿Vendrás?</p>
+        <h2 class="section-title" id="rsvpTitle">Confirma tu asistencia</h2>
+        <p class="rsvp-description" id="rsvpDescription">Nos encantaría contar con tu presencia. Por favor confírmanos antes del 01 de septiembre de 2026.</p>
+        <a class="btn btn--primary btn--large" id="whatsappBtn" href="https://wa.me/50431626792?text=Hola%20Bryan%20y%20Stefany%2C%20confirmo%20mi%20asistencia%20a%20su%20boda%20el%2003%20de%20octubre%20de%202026.%20Mi%20nombre%20es%3A%20" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Confirmar por WhatsApp
+        </a>
+        <p class="rsvp-note" id="rsvpNote">Al hacer clic se abrirá WhatsApp con un mensaje listo para enviar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="footer-photo">
+      <img id="footerPhoto" src="img/footer.jpg" alt="Bryan y Stefany" onerror="this.style.display='none'" />
+      <div class="footer-overlay"></div>
+    </div>
+    <div class="footer-content reveal">
+      <div class="footer-divider"><span></span><svg viewBox="0 0 40 20" fill="none"><path d="M20 2C20 2 14 10 8 10C14 10 20 18 20 18C20 18 26 10 32 10C26 10 20 2 20 2Z" fill="currentColor"/></svg><span></span></div>
+      <h2 class="footer-names">
+        <span id="footerNovio">Bryan</span> <span class="footer-amp">&</span> <span id="footerNovia">Stefany</span>
+      </h2>
+      <p class="footer-date" id="footerDate">03 · 10 · 2026</p>
+      <p class="footer-phrase" id="footerPhrase">Con amor, los esperamos.</p>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+       LIGHTBOX MODAL
+  ══════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose">✕</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev">‹</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="" />
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext">›</button>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       ADMIN BUTTON (oculto, doble clic en footer)
+  ══════════════════════════════════════ -->
+  <div class="admin-trigger" id="adminTrigger" title="Panel de edición"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
